@@ -13,7 +13,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Top Events</title>
+<title>Top Posts</title>
 
 <!-- Bootstrap Core CSS -->
 <link href="resources/css/bootstrap.min.css" rel="stylesheet">
@@ -40,7 +40,7 @@
 
 <body>
 
-	<div class="brand">Top Events</div>
+	<div class="brand">Top Posts</div>
 	<div class="address-bar">comment, like , share</div>
 
 	<!-- Navigation -->
@@ -55,14 +55,14 @@
 					class="icon-bar"></span>
 			</button>
 			<!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-			<a class="navbar-brand" href="index.html">Top Events</a>
+			<a class="navbar-brand" href="index.html">Top Posts</a>
 		</div>
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse"
 			id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
 
-				<li><a href="./event">Events</a></li>
+				<li><a href="./event">Posts</a></li>
 				<li><a href="./announcment">Announcement</a></li>
 
 				<li><a href="./about">About</a></li>
@@ -137,7 +137,7 @@
 				<div class="col-lg-12">
 					<hr>
 					<h2 class="intro-text text-center">
-						New Events <strong>@MUM</strong>
+						New Posts <strong>@MUM</strong>
 					</h2>
 					<hr>
 				</div>
@@ -241,7 +241,7 @@
 	<div class="container">
 		<div class="row">
 			<a href="./addevent" class="btn btn-success btn-lg btn-block">Add
-				Event</a>
+				Post</a>
 
 
 			<div class="col-lg-12 text-center">

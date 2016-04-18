@@ -12,16 +12,16 @@ public class Comment {
     private long id;
     private String comment;
     @ManyToOne
-    private Post event;
+    private Post post;
     @ManyToOne
     private UserAccount user;
 	public Comment() {
 		super();
 	}
-	public Comment(String comment, Post event, UserAccount user) {
+	public Comment(String comment, Post post, UserAccount user) {
 		super();
 		this.comment = comment;
-		this.event = event;
+		this.post = post;
 		this.user = user;
 	}
 	public long getId() {
@@ -37,10 +37,10 @@ public class Comment {
 		this.comment = comment;
 	}
 	public Post getEvent() {
-		return event;
+		return post;
 	}
-	public void setEvent(Post event) {
-		this.event = event;
+	public void setEvent(Post post) {
+		this.post = post;
 	}
 	public UserAccount getUser() {
 		return user;

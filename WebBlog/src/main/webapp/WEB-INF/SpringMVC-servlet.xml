@@ -12,15 +12,15 @@
 	
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
-		<property name="url" value="jdbc:mysql://localhost/lidya"></property>
+		<property name="url" value="jdbc:mysql://localhost/webblog"></property>
 		<property name="username" value="root"></property>
-		<property name="password" value="mat123"></property>
+		<property name="password" value="password"></property>
 	</bean>
 	
 	<bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
 		<property name="dataSource" ref="dataSource"></property>
 		<property name="hibernateProperties" ref="hibernateProperties"></property>
-		<property name="packagesToScan" value="EAProject">
+		<property name="packagesToScan" value="mum">
 			
 		</property>
 	</bean>
@@ -46,7 +46,7 @@
 	
 	<mvc:annotation-driven />
 	<context:component-scan  base-package="mum.ea.group6.webblog.controllers"/>
-	<!-- base-package="EAProject.MumStudentActivites.controllers -->
+
 	
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
