@@ -40,8 +40,8 @@ public class PostUserDAOImpl implements PostUserDAO {
 	@SuppressWarnings("uncheaking")
 	public Collection<Comment> getComment(long eventId) {
 		 return sf.getCurrentSession().createQuery("select distinct c from Comment c "
-		 		+ "join c.event e "
-		 		+ "where e.id = 'eventId' ").list();
+		 		+ "join c.Post p "
+		 		+ "where p.id = 'id' ").list();
 	}
    
 

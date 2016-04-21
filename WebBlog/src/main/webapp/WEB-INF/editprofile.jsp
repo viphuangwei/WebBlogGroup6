@@ -74,15 +74,15 @@
                         <div class="row">
                             <div class="form-group col-lg-4">
                                 <label>FirstName</label>
-                                <input type="text" value="${profile.student.firstName}" name="firstName" class="form-control"/>
+                                <input type="text" value="${profile.user.firstName}" name="firstName" class="form-control"/>
                             </div>
                             <div class="form-group col-lg-4">
                                 <label>LastName</label>
-                               <input type="text" value="${profile.student.lastName}" name="lastName" class="form-control"/>
+                               <input type="text" value="${profile.user.lastName}" name="lastName" class="form-control"/>
                             </div>
                             <div class="form-group col-lg-4">
                                 <label>Email Address</label>
-                                <input type="text" value="${profile.student.emailAddress}" name="email" class="form-control" />
+                                <input type="text" value="${profile.user.emailAddress}" name="email" class="form-control" />
                                
                             </div>
                             <div class="form-group col-lg-4">
@@ -117,7 +117,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; MUM Student Activities 2016</p>
+                    <p>Copyright &copy; Web Blog April,2016</p>
                 </div>
             </div>
         </div>

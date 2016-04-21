@@ -41,7 +41,7 @@ public class UserDAOImpl implements UserDAO {
 	@SuppressWarnings("unchecked")
 	public Collection<UserAccount> getUser() {
 	
-		 return sf.getCurrentSession().createQuery("select u from UserAccount u join fetch u.student ").list();
+		 return sf.getCurrentSession().createQuery("select u from UserAccount u join fetch u.user ").list();
 	}
 
 	

@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
+<beans 
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:sec="http://www.springframework.org/schema/security"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:p="http://www.springframework.org/schema/p"
 	xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:tx="http://www.springframework.org/schema/tx"
 	xmlns:mvc="http://www.springframework.org/schema/mvc"
-	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+		http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd">
 	
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
@@ -24,8 +28,7 @@
 			
 		</property>
 	</bean>
-	
-	
+
 	<bean id="hibernateProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
 		<property name="properties">
 			<props>
@@ -101,7 +104,7 @@
 		<constructor-arg index="2" ref="userDao" />
 
 	</bean>
-	<bean id="eventService" class="mum.ea.group6.webblog.serviceimpl.PostServiceImpl">
+	<bean id="postService" class="mum.ea.group6.webblog.serviceimpl.PostServiceImpl">
 		<constructor-arg ref="postAdminDao" />
 
 
@@ -109,7 +112,27 @@
 	<bean id="userAccountService"
 		class="mum.ea.group6.webblog.serviceimpl.UserAccountServiceImpl">
 		<constructor-arg ref="userDao" />
-
 	</bean>
+	
+    <!-- needed for security tag lib -->
+    <bean id="webexpressionHandler" class="org.springframework.security.web.access.expression.DefaultWebSecurityExpressionHandler" />   
+    
+	<!-- enable use-expressions -->
+	<sec:http use-expressions="true" auto-config="true">
+	        <sec:intercept-url pattern="/welcome.jsp" access="hasRole('ROLE_ADMIN')"/>
+	        <sec:intercept-url pattern="/adminlogin" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+			<sec:form-login login-page="/adminlogin.jsp" authentication-failure-url="/loginfailed.jsp" default-target-url="/welcome.jsp"/>
+	</sec:http>
+    
+
+    <sec:authentication-manager>
+		<sec:authentication-provider>
+            <sec:password-encoder hash="plaintext" />
+            <sec:user-service>
+                <sec:user name="test" password="123" authorities="ROLE_USER, ROLE_ADMIN" />
+                <sec:user name="bob" password="123" authorities="ROLE_USER" />
+            </sec:user-service>
+        </sec:authentication-provider>
+    </sec:authentication-manager>
 	
 </beans>

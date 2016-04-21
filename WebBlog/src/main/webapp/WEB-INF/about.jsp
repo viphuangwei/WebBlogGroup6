@@ -13,7 +13,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>About - MUM Student Activities</title>
+<title>About - Web Blog</title>
 
 <!-- Bootstrap Core CSS -->
 <link href="resources/css/bootstrap.min.css" rel="stylesheet">
@@ -61,8 +61,8 @@
 		<div class="collapse navbar-collapse"
 			id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li><a href="./event">Events</a></li>
-				<li><a href="./announcment">Announcement</a></li>
+				<li><a href="./posted">Posts</a></li>
+				<li><a href="./announce">Announcement</a></li>
 
 				<li><a href="./about">About</a></li>
 				<li><a href="./profile">My Profile</a></li>
@@ -82,26 +82,25 @@
 				<div class="col-lg-12">
 					<hr>
 					<h2 class="intro-text text-center">
-						About <strong>MuM Student Activities</strong>
+						About <strong>Web Blog</strong>
 					</h2>
 					<hr>
 				</div>
 				<div class="col-md-6">
 					<img class="img-responsive img-border-left"
-						src="resources/img/mumstudentactivities.jpg" alt="">
+						src="resources/img/contact-1.jpg" alt="">
 				</div>
 				<div class="col-md-6">
-					<p>MUM Student Activities is a web application, that uses as a
-						Social Network that helps students to communicate with Campus
-						Officials and Share Ideas and Comments and Likes with the events.
-						and Interact with the activities held in the campus.</p>
+					<p>Enterprise Architecture Project Group 6.
+					  We came up with this idea so everyone can pour their ideas and get a feedback
+					  interacting with people from every walk of life.</p>
 
 				</div>
 				<div class="clearfix"></div>
 			</div>
 		</div>
 
-		<div class="row">
+		<!-- <div class="row">
 			<div class="box">
 				<div class="col-lg-12">
 					<hr>
@@ -134,7 +133,7 @@
 
 			</div>
 		</div>
-
+ -->
 	</div>
 	<!-- /.container -->
 
@@ -142,7 +141,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 text-center">
-				<p>Copyright &copy; MUM Student Activities 2016</p>
+				<p>Copyright &copy; Web Blog 2016</p>
 			</div>
 		</div>
 	</div>

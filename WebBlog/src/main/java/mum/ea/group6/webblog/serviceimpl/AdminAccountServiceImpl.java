@@ -19,10 +19,12 @@ public class AdminAccountServiceImpl implements AdminAccountService {
 
 	@Transactional(propagation = Propagation.REQUIRES_NEW)
 	public void createAdmin() {
-		Admin admin1 = new Admin("ted", "awesome");
-		Admin admin2 = new Admin("fiker", "awesome");
+		Admin admin1 = new Admin("Lidya", "Kidane");
+		Admin admin2 = new Admin("Matias", "Cherenet");
+		Admin admin3 = new Admin("Wei", "viphuang");
 		adminDao.saveAdmin(admin1);
 		adminDao.saveAdmin(admin2);
+		adminDao.saveAdmin(admin3);
 
 	}
 

@@ -36,7 +36,7 @@
 
 <body>
 
-    <div class="brand">Student Create Account</div>
+    <div class="brand">Web Blog Sign Up</div>
     
     <!-- Navigation -->
     <nav class="navbar navbar-default" role="navigation">
@@ -50,7 +50,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand" href="index.html">Student Create Account</a>
+                <a class="navbar-brand" href="index.html">Web Blog Create Account</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
           
@@ -73,7 +73,7 @@
                     <form role="form"  action="./signup" method="post">
                         <div class="row">
                             <div class="form-group col-lg-4">
-                                <label>Student Id</label>
+                                <label>User Id</label>
                                  <input type="text" name="id" value="" class="form-control">
                             </div>
                             <div class="form-group col-lg-4">
@@ -98,14 +98,14 @@
                                 <label>Password</label>
                                 <input type="password" name="password" value="" class="form-control">
                             </div>
-                            <div class="form-group col-lg-4">
+                            <!-- <div class="form-group col-lg-4">
 								<label>Department</label></br> 
 								<select class="selectpicker" name="departmentName">
 									<option value="Computer Science" >Computer Science</option>
 									<option value="Business">Business</option>
 									<option value="Vedic">Vedic</option>
 								</select>
-							</div>
+							</div> -->
                             <div class="clearfix"></div>
                            
                             <div class="form-group col-lg-12" >
@@ -125,7 +125,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; MUM Student Activities 2016</p>
+                    <p>Copyright &copy;Web Blog 2016</p>
+                    <a href ="adminlogin.jsp"> Admin </a>
                 </div>
             </div>
         </div>

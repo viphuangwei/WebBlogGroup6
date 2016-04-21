@@ -13,7 +13,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Contact - MUM Student Activities Team</title>
+<title>Contact - Web Blog Team</title>
 
 <!-- Bootstrap Core CSS -->
 <link href="resources/css/bootstrap.min.css" rel="stylesheet">
@@ -55,14 +55,14 @@
 					class="icon-bar"></span>
 			</button>
 			<!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-			<a class="navbar-brand" href="index.html">MUM Student Activities</a>
+			<a class="navbar-brand" href="index.html">Web Blog</a>
 		</div>
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse"
 			id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li><a href="./event">Events</a></li>
-				<li><a href="./announcment">Announcement</a></li>
+				<li><a href="./posted">Posts</a></li>
+				<li><a href="./announce">Announcement</a></li>
 
 				<li><a href="./about">About</a></li>
 				<li><a href="./profile">My Profile</a></li>
@@ -82,7 +82,7 @@
 				<div class="col-lg-12">
 					<hr>
 					<h2 class="intro-text text-center">
-						Contact <strong>MUM Student Activities</strong>
+						Contact <strong>Web Blog</strong>
 					</h2>
 					<hr>
 				</div>
@@ -94,10 +94,16 @@
 				</div>
 				<div class="col-md-4">
 					<p>
-						Phone: <strong>123.456.7890</strong>
+						Phone: <strong>641-879-4587</strong>
 					</p>
 					<p>
-						Email: <strong><a href="mailto:name@example.com">tewodros.agedew@mum.edu</a></strong>
+						Email: <strong><a href="mailto:name@example.com">lidya.kidane@mum.edu</a></strong>
+					</p>
+					<p>
+						Email: <strong><a href="mailto:name@example.com">matias.cherenet@mum.edu</a></strong>
+					</p>
+					<p>
+						Email: <strong><a href="mailto:name@example.com">wei.viphuang@mum.edu</a></strong>
 					</p>
 					<p>
 						Address: <strong>1000 4th St <br>Fair Field, IA
@@ -156,7 +162,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 text-center">
-				<p>Copyright &copy; MUM Student Activities 2016</p>
+				<p>Copyright &copy; Web Blog April,2016</p>
 			</div>
 		</div>
 	</div>

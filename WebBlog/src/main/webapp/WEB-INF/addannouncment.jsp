@@ -73,7 +73,7 @@
 						<strong>Add Announcement</strong>
 					</h2>
 					<hr>
-					<form role="form" action="./addAnouncment" method="post">
+					<form role="form" action="./addAnnouncment" method="post">
 						<div class="row">
 							<div class="form-group col-lg-4">
 								<label>Announcement Title</label> 
@@ -81,7 +81,7 @@
 									class="form-control">
 							</div>
 							<div class="form-group col-lg-4">
-								<label>Announcement Discription</label>
+								<label>Announcement Description</label>
 								 <input type="text"  name="discription"
 					value="" class="form-control">
 							</div>
@@ -123,7 +123,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
-					<p>Copyright &copy; MUM Student Activities 2016</p>
+					<p>Copyright &copy; Web Blog April,2016</p>
 				</div>
 			</div>
 		</div>

@@ -15,7 +15,7 @@ public class UserAccount {
 	private long user_Id;
 	private String password;
 	@OneToOne(cascade=CascadeType.ALL)
-	private User student;
+	private User user;
 	@OneToMany(mappedBy="user")
 	private List<Comment> comments = new ArrayList<>();
 	
@@ -24,11 +24,11 @@ public class UserAccount {
 		super();
 	}
 
-	public UserAccount(long user_Id, String password, User student) {
+	public UserAccount(long user_Id, String password, User user) {
 		super();
 		this.user_Id = user_Id;
 		this.password = password;
-		this.student = student;
+		this.user = user;
 		
 	}
 
@@ -36,8 +36,8 @@ public class UserAccount {
 		return user_Id;
 	}
 
-	public void setUser_Id(long user_Id) {
-		user_Id = user_Id;
+	public void setUser_Id(long userId) {
+		user_Id = userId;
 	}
 
 	public String getPassword() {
@@ -48,12 +48,12 @@ public class UserAccount {
 		this.password = password;
 	}
 
-	public User getStudent() {
-		return student;
+	public User getUser() {
+		return user;
 	}
 
-	public void setStudent(User student) {
-		this.student = student;
+	public void setUser(User user) {
+		this.user = user;
 	}
 
 	public List<Comment> getComments() {

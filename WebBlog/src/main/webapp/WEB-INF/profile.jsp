@@ -54,14 +54,14 @@
 					class="icon-bar"></span>
 			</button>
 			<!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-			<a class="navbar-brand" href="index.html">MuM Student Activities</a>
+			<a class="navbar-brand" href="index.html">Web Blog</a>
 		</div>
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse"
 			id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li><a href="./event">Events</a></li>
-				<li><a href="./announcment">Announcement</a></li>
+				<li><a href="./posted">Posts</a></li>
+				<li><a href="./announce">Announcement</a></li>
 
 				<li><a href="./about">About</a></li>
 				<li><a href="./profile">My Profile</a></li>
@@ -81,12 +81,12 @@
 
 					<hr>
 					<h2 class="intro-text text-center">
-						<strong><h1>${profile.student.firstName}</h1></strong>
+						<strong><h1>${profile.user.firstName}</h1></strong>
 					</h2>
 					<hr>
 
 					<img class="img-responsive img-border img-left" alt=""
-						src="resources/img/${profile.student.image}">
+						src="resources/img/${profile.user.image}">
 
 					<hr class="visible-xs">
 					<br>
@@ -94,16 +94,16 @@
 					<br>
 					<br>
 					<h4>
-						FirstName: ${profile.student.firstName}
+						FirstName: ${profile.user.firstName}
 						<hr>
-						Student Id : ${profile.student.userId}
+						Student Id : ${profile.user.userId}
 						<hr>
-						LastName : ${profile.student.lastName}
+						LastName : ${profile.user.lastName}
 						<hr>
-						Email : ${profile.student.emailAddress}
-						<hr>
-						Department :${profile.student.department.name}
-						<hr>
+						Email : ${profile.user.emailAddress}
+						<%-- <hr>
+						Department :${profile.user.department.name}
+						<hr> --%>
 						password : ${profile.password}
 					</h4>
 					<a href="./editprofile" class="btn btn-success btn-lg btn-block">Edit
@@ -122,7 +122,7 @@
 		<div class="row">
 			<div class="col-lg-12 text-center">
 
-				<p>Copyright &copy; MUM Student Activities 2016</p>
+				<p>Copyright &copy; Web Blog April,2016</p>
 			</div>
 		</div>
 	</div>
